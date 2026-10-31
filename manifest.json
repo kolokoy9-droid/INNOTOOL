@@ -1,0 +1,9 @@
+{
+    "name": "Innowatech Service Tool",
+    "short_name": "MAT Suite",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#f4f6f9",
+    "theme_color": "#0d47a1",
+    "icons": []
+}
