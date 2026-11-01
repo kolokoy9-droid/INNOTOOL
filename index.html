@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#0d47a1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>Innowatech Service Tool</title>
+    <title>INNOWATΞCH Service Tool</title>
     
     <!-- PWA / App Manifest direkt verlinkt auf deine vorhandene manifest.json -->
     <link rel="manifest" href="manifest.json">
@@ -49,7 +49,14 @@
             background-color: var(--primary-color);
             color: white;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: baseline;
         }
 
         .header h1 {
@@ -58,12 +65,16 @@
             letter-spacing: 1px;
         }
 
+        .version-badge {
+            font-size: 0.75rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
         .header-sub {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 8px;
-            padding: 0 5px;
             font-size: 0.9rem;
             opacity: 0.95;
             font-weight: 500;
@@ -232,7 +243,10 @@
 
 <div class="container">
     <div class="header">
-        <h1>INNOWATECH</h1>
+        <div class="logo-area">
+            <h1>INNOWATΞCH</h1>
+            <span class="version-badge">v1.0</span>
+        </div>
         <div class="header-sub">
             <span>Service Tool</span>
         </div>
@@ -246,7 +260,7 @@
         <button type="button" class="tab-btn" id="btn-pid" onclick="switchTab('pid')">PID & Regler</button>
         <button type="button" class="tab-btn" id="btn-sonden" onclick="switchTab('sonden')">Sonden</button>
         <button type="button" class="tab-btn" id="btn-anlagen" onclick="switchTab('anlagen')">Anlagen</button>
-        <button type="button" class="tab-btn" id="btn-verdünnung" onclick="switchTab('verdünnung')">Labormessung</button>
+        <button type="button" class="tab-btn" id="btn-verdünnung" onclick="switchTab('verdünnung')">Verdünnungsreihe</button>
     </div>
 
     <!-- MODUS 1: Standard -->
@@ -803,7 +817,7 @@
 
     <!-- Copyright Footer -->
     <div class="footer">
-        © #MAT | Innowatech
+        © 2026 #MAT
     </div>
 </div>
 
